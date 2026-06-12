@@ -1,0 +1,13 @@
+{
+  "name": "chat-app-root",
+  "version": "1.0.0",
+  "description": "Root configuration to run both backend and frontend of the Chat App",
+  "scripts": {
+    "dev": "npx concurrently -k -n \"backend,frontend\" -c \"yellow,blue\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npx concurrently -k -n \"backend,frontend\" -c \"yellow,blue\" \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "install:all": "npm install --prefix backend && npm install --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
