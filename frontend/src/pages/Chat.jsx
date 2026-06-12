@@ -8,7 +8,7 @@ import { format, isToday, isYesterday } from 'date-fns';
 import { LogOut, Send, Search, Phone, Video, Paperclip, MessageCircle, Users, X, File as FileIcon, Trash2, UserPlus, Settings, Shield } from 'lucide-react';
 import { encryptText, decryptText } from '../utils/crypto';
 
-const API = 'http://localhost:5001';
+const API = 'https://chatbox-3uwt.onrender.com';
 const EMOJIS = ['👍','❤️','😂','😮','😢','🔥'];
 
 const getInitial = (n) => n?.[0]?.toUpperCase() || '?';
